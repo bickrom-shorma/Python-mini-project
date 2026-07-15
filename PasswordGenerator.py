@@ -18,5 +18,23 @@ digit = st.checkbox("Number Letters",value=True)
 Symbols = st.checkbox("Symbols Letters",value=True)
 
 def Generate_password(len):
+
     ch = ""
+
+    if uppercase:
+        ch += string.ascii_uppercase
+    if lowercase:
+        ch += string.ascii_lowercase
+    if digit:
+        ch += string.digits
+    if Symbols:
+        ch += string.punctuation
+    if not ch:
+        return "select at least one option."
+    
+    password = "".join(random.choice(ch)) for _ in range(len)
+    return password
+
+
+    
     
