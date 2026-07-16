@@ -2,39 +2,37 @@ import streamlit as st
 import random
 import string
 
-st.page(
-    page_title = "Password Generator",
-    icon = "🔐",
-    layout = "centered"
-)
+
 
 st.title("🔐 Password Generator")
 
-len = st.slider("select Password Length" )
+length = st.slider("Select Password Length", 4, 50, 12)
 
-uppercase = st.checkbox("Uppercase Letters",value=True)
-lowercase = st.checkbox("Lower Letters",value=True)
-digit = st.checkbox("Number Letters",value=True)
-Symbols = st.checkbox("Symbols Letters",value=True)
+use_uppercase = st.checkbox("Include Uppercase Letters", value=True)
+use_lowercase = st.checkbox("Include Lowercase Letters", value=True)
+use_digits = st.checkbox("Include Numbers", value=True)
+use_symbols = st.checkbox("Include Symbols", value=True)
 
-def Generate_password(len):
 
-    ch = ""
+def generate_password(length):
+    characters = ""
 
-    if uppercase:
-        ch += string.ascii_uppercase
-    if lowercase:
-        ch += string.ascii_lowercase
-    if digit:
-        ch += string.digits
-    if Symbols:
-        ch += string.punctuation
-    if not ch:
-        return "select at least one option."
-    
-    password = "".join(random.choice(ch)) for _ in range(len)
+    if use_uppercase:
+        characters += string.ascii_uppercase
+
+    if use_lowercase:
+        characters += string.ascii_lowercase
+
+    if use_digits:
+        characters += string.digits
+
+    if use_symbols:
+        characters += string.punctuation
+
+    if not characters:
+        return "Please select at least one option."
+
+    password = "".join(random.choice(characters) for _ in range(length))
     return password
 
 
-    
-    
