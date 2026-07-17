@@ -1,8 +1,34 @@
-# Python Mini Projects 🐍
+# 🐍 Python Mini Projects
 
-A collection of beginner-friendly Python mini projects.
+A collection of beginner-friendly Python mini projects built using **Python** and **Streamlit**.
 
-## Projects Included
-01. Guess the Number Using Streamlit 
-02. Password Generator  Using Streamlit
-03. Calculator using Streamlit
+## 📂 Projects
+
+- 🧮 Calculator
+- 🔢 Number Guess Game
+- 🔐 Password Generator
+- 📋 To-Do List *(Coming Soon)*
+- ❓ Quiz App *(Coming Soon)*
+- 📒 Contact Book *(Coming Soon)*
+
+## 🚀 Tech Stack
+
+- Python
+- Streamlit
+
+## ⚙️ Installation
+
+```bash
+git clone <repository-url>
+cd python-mini-projects
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 🎯 Goal  
+
+Practice Python fundamentals, improve problem-solving skills, and build a strong GitHub portfolio with Streamlit mini projects.
+
+## 👨‍💻 Author
+
+**Bickrom Shorma**
