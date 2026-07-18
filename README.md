@@ -4,10 +4,10 @@ A collection of beginner-friendly Python mini projects built using **Python** an
 
 ## 📂 Projects
 
-- 🧮 Calculator
-- 🔢 Number Guess Game
-- 🔐 Password Generator
-- 📋 To-Do List *(Coming Soon)*
+- 🧮 Calculator 
+- 🔢 Number Guess Game using Streamlit
+- 🔐 Password Generator using Streamlit
+- 📋 To-Do List 
 - ❓ Quiz App *(Coming Soon)*
 - 📒 Contact Book *(Coming Soon)*
 
