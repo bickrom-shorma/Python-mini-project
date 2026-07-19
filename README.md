@@ -7,7 +7,7 @@ A collection of beginner-friendly Python mini projects built using **Python** an
 - 🧮 Calculator 
 - 🔢 Number Guess Game using Streamlit
 - 🔐 Password Generator using Streamlit
-- 📋 To-Do List 
+- 📋 To-Do List s
 - ❓ Quiz App *(Coming Soon)*
 - 📒 Contact Book *(Coming Soon)*
 
