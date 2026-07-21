@@ -4,10 +4,11 @@ A simple command-line To-Do List application built with Python. This project all
 
 ## ✨ Features
 
-- ➕ Add Task
-- 📋 View All Tasks
-- 🗑️ Delete Task
-- 🚪 Exit Program
+-  Add Task
+-  View All Tasks
+-  Delete Task
+-  Edit Task 
+-  Exit Program
 
 ## 🛠️ Technologies Used
 
@@ -33,7 +34,7 @@ cd To-Do-List
 python todo.py
 ```
 
-## 📷 Sample Output
+##  Sample Output
 
 ```text
 ===== TO-DO LIST =====
