@@ -61,7 +61,6 @@ Task added successfully!
 
 ## 📌 Future Improvements
 
-- ✏️ Edit Task
 - ✅ Mark Task as Completed
 - 💾 Save Tasks to JSON File
 - 📂 Load Tasks Automatically
