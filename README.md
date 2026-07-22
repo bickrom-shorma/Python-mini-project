@@ -2,21 +2,20 @@
 
 A collection of beginner-friendly Python mini projects built using **Python** and **Streamlit**.
 
-## 📂 Projects
+##  Projects
 
-- 🧮 Calculator 
-- 🔢 Number Guess Game using Streamlit
-- 🔐 Password Generator using Streamlit
-- 📋 To-Do List s
-- ❓ Quiz App *(Coming Soon)*
-- 📒 Contact Book *(Coming Soon)*
+-  Calculator 
+-  Number Guess Game using Streamlit
+-  Password Generator using Streamlit
+-  To-Do List s
 
-## 🚀 Tech Stack
+
+##  Tech Stack
 
 - Python
 - Streamlit
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone <repository-url>
