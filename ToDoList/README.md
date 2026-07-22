@@ -2,7 +2,7 @@
 
 A simple command-line To-Do List application built with Python. This project allows users to manage their daily tasks by adding, viewing, and deleting tasks.
 
-## ✨ Features
+## Features
 
 -  Add Task
 -  View All Tasks
@@ -10,11 +10,11 @@ A simple command-line To-Do List application built with Python. This project all
 -  Edit Task 
 -  Exit Program
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python 3
 
-## 🚀 How to Run
+##  How to Run
 
 1. Clone the repository
 
@@ -51,21 +51,13 @@ Enter Task: Learn Python
 Task added successfully!
 ```
 
-## 📚 Concepts Used
+##  Concepts Used
 
 - Python Functions
 - Lists
 - Loops
 - Conditional Statements
 - User Input
-
-## 📌 Future Improvements
-
-- ✏️ Edit Task
-- ✅ Mark Task as Completed
-- 💾 Save Tasks to JSON File
-- 📂 Load Tasks Automatically
-- 🔍 Search Tasks
 
 ## 👨‍💻 Author
 
