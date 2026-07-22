@@ -59,6 +59,16 @@ Task added successfully!
 - Conditional Statements
 - User Input
 
+<<<<<<< HEAD
+=======
+## 📌 Future Improvements
+
+- ✅ Mark Task as Completed
+- 💾 Save Tasks to JSON File
+- 📂 Load Tasks Automatically
+- 🔍 Search Tasks
+
+>>>>>>> 9b1c3e073bc4caeef91679427d73d30842ef99d9
 ## 👨‍💻 Author
 
 **Bickrom Shorma**

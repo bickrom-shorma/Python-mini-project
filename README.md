@@ -8,6 +8,7 @@ A collection of beginner-friendly Python mini projects built using **Python** an
 -  Number Guess Game using Streamlit
 -  Password Generator using Streamlit
 -  To-Do List s
+-  Leap-Year-Checker
 
 
 ##  Tech Stack
@@ -15,7 +16,7 @@ A collection of beginner-friendly Python mini projects built using **Python** an
 - Python
 - Streamlit
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone <repository-url>
