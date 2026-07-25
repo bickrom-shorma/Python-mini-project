@@ -9,6 +9,7 @@ A collection of beginner-friendly Python mini projects built using **Python** an
 -  Password Generator using Streamlit
 -  To-Do List s
 -  Leap-Year-Checker
+-  Tic-Tac-Toe
 
 
 ##  Tech Stack
