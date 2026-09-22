@@ -1,10 +1,14 @@
-## 🕒 Digital Clock in Python
+Digital Clock ⏰
 
-A simple real-time digital clock built with Python. This project displays the current system time and updates automatically every second.
+A simple Digital Clock built with Python and Tkinter. The clock displays the current time in HH:MM:SS format and updates automatically every second.
 
 Features
-Real-time clock display
-Automatic time updates every second
-Simple and beginner-friendly code
-Lightweight and easy to customize
+Real-time digital clock
+Updates every second
+24-hour time format
+Simple and clean interface
+Non-resizable window
 Technologies Used
+Python
+Tkinter
+time module
