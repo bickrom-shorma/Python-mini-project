@@ -1,8 +1,8 @@
-Digital Clock ⏰
+## igital Clock ⏰
 
 A simple Digital Clock built with Python and Tkinter. The clock displays the current time in HH:MM:SS format and updates automatically every second.
 
-Features
+## Features
 Real-time digital clock
 Updates every second
 24-hour time format
