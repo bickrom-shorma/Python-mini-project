@@ -1,84 +1,112 @@
-# Tic Tac Toe
+import tkinter as tk
 
-board = [" " for _ in range(9)]
+window = tk.Tk()
+window.title("Tic Tac Toe")
+window.geometry("400x450")
 
+player = "X"
 
-def display_board():
-    print()
-    print(board[0] + " | " + board[1] + " | " + board[2])
-    print("--+---+--")
-    print(board[3] + " | " + board[4] + " | " + board[5])
-    print("--+---+--")
-    print(board[6] + " | " + board[7] + " | " + board[8])
-    print()
+buttons = []
 
 
-def check_winner(player):
-    winning_combinations = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6]
+def click(button):
+    global player
+
+    if button["text"] == "":
+        button["text"] = player
+
+        if check_winner():
+            result.config(text=f"Player {player} Wins!")
+            disable_buttons()
+            return
+
+        if all(button["text"] != "" for button in buttons):
+            result.config(text="Draw!")
+            return
+
+        if player == "X":
+            player = "O"
+        else:
+            player = "X"
+
+        result.config(text=f"Player {player}'s Turn")
+
+
+def check_winner():
+    winning_positions = [
+        (0, 1, 2),
+        (3, 4, 5),
+        (6, 7, 8),
+        (0, 3, 6),
+        (1, 4, 7),
+        (2, 5, 8),
+        (0, 4, 8),
+        (2, 4, 6)
     ]
 
-    for combination in winning_combinations:
-        if (
-            board[combination[0]] == player
-            and board[combination[1]] == player
-            and board[combination[2]] == player
-        ):
+    for a, b, c in winning_positions:
+        if (buttons[a]["text"] != "" and
+            buttons[a]["text"] == buttons[b]["text"] == buttons[c]["text"]):
             return True
 
     return False
 
 
-def check_draw():
-    return " " not in board
+def disable_buttons():
+    for button in buttons:
+        button.config(state="disabled")
 
 
-def play_game():
-    current_player = "X"
+def restart():
+    global player
 
-    while True:
-        display_board()
+    player = "X"
 
-        print("Player", current_player, "turn")
+    for button in buttons:
+        button.config(text="", state="normal")
 
-        try:
-            position = int(input("Enter position (1-9): ")) - 1
-
-            if position < 0 or position > 8:
-                print("Please enter a number between 1 and 9.")
-                continue
-
-            if board[position] != " ":
-                print("That position is already taken.")
-                continue
-
-            board[position] = current_player
-
-        except ValueError:
-            print("Please enter a valid number.")
-            continue
-
-        if check_winner(current_player):
-            display_board()
-            print("Player", current_player, "wins!")
-            break
-
-        if check_draw():
-            display_board()
-            print("It's a draw!")
-            break
-
-        if current_player == "X":
-            current_player = "O"
-        else:
-            current_player = "X"
+    result.config(text="Player X's Turn")
 
 
-play_game()
+result = tk.Label(
+    window,
+    text="Player X's Turn",
+    font=("Arial", 18)
+)
+
+result.pack(pady=20)
+
+
+frame = tk.Frame(window)
+frame.pack()
+
+
+for i in range(9):
+    button = tk.Button(
+        frame,
+        text="",
+        font=("Arial", 30),
+        width=5,
+        height=2,
+        command=lambda i=i: click(buttons[i])
+    )
+
+    button.grid(
+        row=i // 3,
+        column=i % 3
+    )
+
+    buttons.append(button)
+
+
+restart_button = tk.Button(
+    window,
+    text="Restart",
+    font=("Arial", 15),
+    command=restart
+)
+
+restart_button.pack(pady=20)
+
+
+window.mainloop()
